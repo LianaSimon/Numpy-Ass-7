@@ -8,13 +8,16 @@ These programs are well-suited for anyone starting with data science, machine le
 
 
 
-pip install numpy
 
-import numpy as np
 
 ### Exercise 1: 
 
 #### Create a numpy array containing the numbers from 1 to 10, and then reshape it to a 2x5 matrix.
+
+
+pip install numpy
+
+import numpy as np
 
 #### PROGRAM 1
 
