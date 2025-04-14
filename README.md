@@ -1,5 +1,13 @@
 # NUMPY
 
+## 📘 Introduction
+
+This repository contains a set of beginner-friendly Python exercises using NumPy and Pandas, designed to build foundational data manipulation and analysis skills. Each exercise focuses on key concepts such as array creation, reshaping, slicing, Series and DataFrame operations, filtering, and file handling.
+
+These programs are well-suited for anyone starting with data science, machine learning, or Python programming in general. The code is written to be simple, clear, and easy to follow within a Jupyter Notebook environment.
+
+
+
 pip install numpy
 
 import numpy as np
@@ -94,6 +102,72 @@ print("DATA FRAME:\n\n",df)
 ![image](https://github.com/user-attachments/assets/63897aa2-188e-4c33-860c-6e5062e922cb)
 
 
+### Exercise 5: 
+
+#### Add a new column to the data frame created in question 1, called occupation. The values for this column should be Programmer, Manager, and Analyst, corresponding to the rows in the dataframe.
+
+
+#### PROGRAM 5
+
+occupations=['Programmeer','Manager','Analyst']*3+['Programmer']
+
+df['Occupations']=occupations
+
+print("NEW DATA FRAME:\n",df)
+
+
+#### OUTPUT 5
+
+![image](https://github.com/user-attachments/assets/2f6f5a60-9c1d-416f-be2a-d32ac889ae1a)
+
+
+### Exercise 6: 
+
+#### Select the rows of the dataframe where the age is greater than or equal to 30.
+
+
+#### PROGRAM 6
+
+age_above30=df[df['Age']>=30]
+
+print("The rows of the dataframe where the age is greater than or equal to 30 are:\n",age_above30)
+
+
+#### OUTPUT 6
+
+![image](https://github.com/user-attachments/assets/1f1a28c3-9147-4b47-a5d7-96faa351d5bc)
+
+
+
+### Exercise 7: (Score : 2)
+
+#### Convert this dataframe to a csv file and read that csv file, finally display the contents.
+
+#### PROGRAM 7
+
+##### #Save to CSV file
+
+df.to_csv('people_data.csv',index=0)
+
+##### #Read the CSV file
+
+df_csv=pd.read_csv('people_data.csv')
+
+print("Contents of CSV file: \n",df_csv)
+
+
+#### OUTPUT 7
+
+![image](https://github.com/user-attachments/assets/cf554050-b226-43f7-954a-86cc3ed3b907)
+
+
+
+
+## ✅ Conclusion
+
+These exercises provide a practical introduction to working with NumPy and Pandas—two of the most essential libraries for data analysis in Python. By completing them, users can gain hands-on experience in creating arrays, manipulating data, and working with real-world data structures like Series and DataFrames.
+
+Feel free to fork this repository, explore further, and build on top of these examples as you continue your journey in data science!
 
 
 
